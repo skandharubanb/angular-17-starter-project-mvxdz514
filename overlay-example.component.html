@@ -1,0 +1,12 @@
+<!-- overlay-example.component.html -->
+<div
+  class="overlay-container"
+  *ngIf="overlayRef"
+  [@moveOverlay]="overlayPosition"
+>
+  <app-overlay-content></app-overlay-content>
+</div>
+
+<button (click)="openOverlay()">Open Overlay</button>
+<button (click)="closeOverlay()">Close Overlay</button>
+<button (click)="moveOverlay()">Move Overlay</button>
